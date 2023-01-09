@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta type=" ">
+    <title>TatoNaranjo Developer</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class = "nav__title">
+          <h2 class = "nav__title-logo">Tato<span class = "nav__logo--variant">Naranjo</span></h2>
+        </div>
+        <ul class="nav-link nav-link-menu">
+          <li class="nav-items"><a href="" class="nav-links">Biografía</a></li>
+          <li class="nav-items"><a href="" class="nav-links">Mi Visión</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class = "principal">
+      <section class="description">
+        <img src="./images/Me.jpeg" alt="" class="description-image" />
+
+      
+        <div class="description-text">
+          <h2 class="description-title">Santiago Naranjo Herrera</h2>
+          <div class ="contact-links">
+            <div><a href=""><img src="./images/github-logo.svg" alt="logo de github" name = "github-logo"></a> </div>
+            <div><a href=""> <img src="./images/instagram-logo.svg" alt="logo de instagram" name ="instagram-logo"></a></div>
+            <div><a href=""><img src="./images/twitter-logo.svg" alt="logo de twitter" name = "twitter-logo"></a></div>
+            <div><a href=""><img src="./images/linkedin-logo.svg" alt="logo de linkedin" name = "linkedin-logo"></a></div>
+           
+           
+          </div>
+          <p class="description-paragraph">
+            Hola, Soy Tato, Un programador novato pero entusiasta que desde los
+            16 años busca innovar y aprender algo nuevo cada día.
+            <br />
+            Con una facilidad para comprender y hablar en inglés, y una
+            disposición natural al autoaprendizaje, he logrado desarrollar un
+            gusto por la programación al ver los distintos campos de desarrollo
+            que tiene, así como también todo lo que se puede llegar a diseñar y
+            crear por medio de las líneas de código. Pienso que todo el mundo
+            debería aprender a programar, así como también pienso que programar
+            no es para todo el mundo, pues lo que se necesita para hacer un buen
+            trabajo la mayoría de las veces, es pasión a la digitación de
+            código, mucha paciencia y café (MUCHO...MUCHO CAFÉ).
+          </p>
+        </div>
+      </section>
+     
+      <section class="Skills">
+        <h2>My Skills</h2>
+        <div class="skills-section">
+          <div class = "html-section">
+            <h3>Html</h3>
+            <img src="./images/html-brand.svg" alt="" />
+           
+            <p>
+              HyperText Markup Language es una herramienta que está comunmente en debate sobre si es un lenguaje de programación.
+              <br> <br>
+              Pero lo que no se puede poner en duda es su importancia a la hora de la estructuración de cualquier página web programada desde cero. 
+              <br><br>
+              Programada con la mejor estructuración y documentación, es una de mis herramientas principales.
+            </p>
+          </div>
+
+          <div class = "java-section">
+            <h3>Java Básico</h3>
+            <img src="./images/java-svgrepo-com.svg" alt="" />
+            <p>
+              Siendo el primer lenguaje con el que aprendí a programar, Java se coloca en mi lista de habilidades como el lenguaje de programación con el que más tiempo
+              he trabajado, usandolo principalmente en competencias de programación para plataformas como CodeForces o HackerRank.
+              <br><br>
+              Un lenguaje que, aunque ha bajado en popularidad según las encuestas globales de los ultimos años, no deja de tener importancia dentro del ámbito empresarial.
+            </p>
+          </div>
+
+          <div class = "css-section">
+            <h3>Css3</h3>
+            <img src="./images/css-brand.svg" alt="" />
+            <p>
+              Cascading Style Sheets, como indica su nombre es la herramienta de diseño gráfico para páginas web más usada en la actualidad.
+              <br><br>
+              Con una amplia variedad de opciones para la personalización de los entornos web, hago enfasis en el uso de herramientas 
+              que vienen naturalmente en CSS como CSS Grid, CSS Flex o Flexbox para aplicar correctamente los distintos patrones de diseño.
+
+            </p>
+          </div>
+          <div class = "python-section">
+            <h3>Python Básico</h3>
+            <img src="./images/python.svg" alt="" />
+            <p>
+              El lenguaje de programación más famoso de los últimos tiempos no podía quedarse atrás.
+              <br><br>
+              Siendo el lenguaje de programación más utilizado en el backend y el ambito de la Inteligencia Artificial debido a su naturalidad con las bases de datos
+               y su facilidad para manejar grandes cantidades numéricas, se ha vuelto una herramienta indispensable en la actualidad.
+            </p>
+          </div>
+
+          
+          
+        </div>
+       
+         
+         
+
+
+
+      </div>
+      </section>
+      
+      <form class = "formulario" action="">
+        <fieldset>
+          <legend>Contactame</legend>
+
+          <div class="contenedor-campos">
+            <div class = "campo">
+              <label for="nombre">Nombre</label>
+              <input class="input-text" type="text " placeholder="Nombre" id="nombre" />
+            </div>
+
+            <div class = "campo">
+              <label for="telefono">Telefono</label>
+              <input class="input-text" type="tel" placeholder="Tu Teléfono" id="telefono"/>
+            </div>
+
+            <div class = "campo">
+              <label for="E-mail">Correo</label>
+              <input class="input-text" type="email" placeholder="Tu Email" id="E-mail"/>
+            </div>
+
+            <div class = "campo">
+              <label for="texto-mensaje">Mensaje</label>
+              <textarea class = "input-text" id = "texto-mensaje"></textarea>
+            </div>
+          </div> <!--Contenedor-Campos-->
+
+          <div class ="flex alinear-derecha">
+            <input class = "boton w-100 " type="submit" value="Enviar" />
+          </div>
+        </fieldset>
+ 
+
+      </form>
+    </main>
+
+    <footer class = "footer">
+      <p>Todos Los Derechos Reservados.</p>
+      <h3>TatoNaranjo Freelancer Developer</h3>
+    </footer>
+  </body>
+</html>
