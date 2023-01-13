@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <meta type=" ">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="index.html" as="document"/>
+    <!-- Preload -->
+
+    <link rel="preload" href="./css/style.css" as="style"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <link rel="preload" href="./css/normalize.css" as = "style">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+
+    <link rel="preload" href="./images/Me.jpeg" as = "image"/>
     <title>TatoNaranjo Developer</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <nav class="nav">
         <div class = "nav__title">
@@ -20,8 +30,12 @@
         </ul>
       </nav>
     </header>
+    <!-- Fin Header -->
 
+    <!-- Contenido Principal -->
     <main class = "principal">
+
+      <!-- Seccion Descripcion -->
       <section class="description">
         <img src="./images/Me.jpeg" alt="" class="description-image" />
 
@@ -29,10 +43,10 @@
         <div class="description-text">
           <h2 class="description-title">Santiago Naranjo Herrera</h2>
           <div class ="contact-links">
-            <div><a href=""><img src="./images/github-logo.svg" alt="logo de github" name = "github-logo"></a> </div>
-            <div><a href=""> <img src="./images/instagram-logo.svg" alt="logo de instagram" name ="instagram-logo"></a></div>
-            <div><a href=""><img src="./images/twitter-logo.svg" alt="logo de twitter" name = "twitter-logo"></a></div>
-            <div><a href=""><img src="./images/linkedin-logo.svg" alt="logo de linkedin" name = "linkedin-logo"></a></div>
+            <div><a href="https://github.com/TatoNaranjo" target="_blank"><img src="./images/github-logo.svg" alt="logo de github" name = "github-logo"></a> </div>
+            <div><a href="https://www.instagram.com/tato_naranjo/" target="_blank"> <img src="./images/instagram-logo.svg" alt="logo de instagram" name ="instagram-logo"></a></div>
+            <div><a href="https://twitter.com/tatonaranjo4" target="_blank"><img src="./images/twitter-logo.svg" alt="logo de twitter" name = "twitter-logo"></a></div>
+            <div><a href="https://www.linkedin.com/in/santiago-naranjo-herrera-a43429260/" target="_blank"><img src="./images/linkedin-logo.svg" alt="logo de linkedin" name = "linkedin-logo"></a></div>
            
            
           </div>
@@ -52,7 +66,9 @@
           </p>
         </div>
       </section>
-     
+      <!-- Fin Seccion Descripcion -->
+
+     <!-- Seccion Skills -->
       <section class="Skills">
         <h2>My Skills</h2>
         <div class="skills-section">
@@ -113,7 +129,10 @@
 
       </div>
       </section>
+      <!-- Fin Seccion Skills -->
       
+      <!-- Seccion Formulario -->
+
       <form class = "formulario" action="">
         <fieldset>
           <legend>Contactame</legend>
@@ -131,12 +150,12 @@
 
             <div class = "campo">
               <label for="E-mail">Correo</label>
-              <input class="input-text" type="email" placeholder="Tu Email" id="E-mail"/>
+              <input class="input-text" type="email" placeholder="Tu Email" id="email"/>
             </div>
 
             <div class = "campo">
-              <label for="texto-mensaje">Mensaje</label>
-              <textarea class = "input-text" id = "texto-mensaje"></textarea>
+              <label for="mensaje">Mensaje</label>
+              <textarea class = "input-text" id = "mensaje"></textarea>
             </div>
           </div> <!--Contenedor-Campos-->
 
@@ -147,11 +166,21 @@
  
 
       </form>
+      <!-- Fin Seccion Formulario -->
     </main>
+    <!-- Fin Contenido Principal -->
 
+
+
+    <!-- Footer -->
     <footer class = "footer">
       <p>Todos Los Derechos Reservados.</p>
       <h3>TatoNaranjo Freelancer Developer</h3>
     </footer>
+    <!-- Fin Footer -->
+
+
+    <!-- Archivos JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
