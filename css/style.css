@@ -37,8 +37,7 @@ a{
   color: var(--white);
  
   background-color: var(--color1);
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
+
 
   top: 0%;
 }
@@ -110,8 +109,7 @@ a{
 
   max-width: 1200px;
   border-radius: 12px;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
+
 }
 .description-text {
   text-align: center;
@@ -175,8 +173,6 @@ width: 100%;
   padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
-  scroll-snap-align: center; 
-  scroll-snap-stop: unset;
   
 }
 @media (min-width: 768px){
@@ -241,8 +237,7 @@ width: 100%;
   margin-block-start: 12px;
   border-radius: 20px;
   background-color: var(--color3);
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
+ 
 }
 
 
