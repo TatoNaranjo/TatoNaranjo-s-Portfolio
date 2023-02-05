@@ -367,15 +367,25 @@ width: 100%;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
+  transition: all .3s ease;
   text-transform: uppercase;
   width: auto;
   align-content: center;
+  box-shadow:#1d577e 5px 10px 0px 0px;
 }
 
 .boton:hover{
   cursor: pointer;
   background-color: var(--black);
+  box-shadow: gray 0px 7px 0px 0px;
   color: var(--white);
+}
+.boton:active{
+  background-color: white;
+ /*50, 168, 80*/
+ box-shadow: white 0px 0px 0px 0px;
+ transform: translateY(5px);
+ transition: 200ms;
 }
 /* Fin del Formulario*/
 
