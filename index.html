@@ -41,7 +41,10 @@
 
       
         <div class="description-text">
-          <h2 class="description-title">Santiago Naranjo Herrera</h2>
+          <div class ="title">
+            <h2 class="description-title">Santiago Naranjo Herrera</h2>
+          </div>
+          
           <div class ="contact-links">
             <div><a href="https://github.com/TatoNaranjo" target="_blank"><img src="./images/github-logo.svg" alt="logo de github" name = "github-logo"></a> </div>
             <div><a href="https://www.instagram.com/tato_naranjo/" target="_blank"> <img src="./images/instagram-logo.svg" alt="logo de instagram" name ="instagram-logo"></a></div>
@@ -138,24 +141,37 @@
           <legend>Contactame</legend>
 
           <div class="contenedor-campos">
-            <div class = "campo">
-              <label for="nombre">Nombre</label>
-              <input class="input-text" type="text " placeholder="Nombre" id="nombre" />
+            <div class = "campo" class = "formulario-label">
+              <input type="value" required="" id="nombre">
+                <label class = "formulario-label">
+                    <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span>
+                </label>
+          
             </div>
 
             <div class = "campo">
-              <label for="telefono">Telefono</label>
-              <input class="input-text" type="tel" placeholder="Tu Teléfono" id="telefono"/>
+              <input type="value" required="" id = "telefono">
+              <label class = "formulario-label">
+                  <span style="transition-delay:0ms">T</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">l</span><span style="transition-delay:150ms">e</span><span style="transition-delay:200ms">f</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms">n</span><span style="transition-delay:350ms">o</span>
+              </label>
+        
             </div>
 
             <div class = "campo">
-              <label for="E-mail">Correo</label>
-              <input class="input-text" type="email" placeholder="Tu Email" id="email"/>
+            
+              <input type="value" required="" id ="email">
+              <label class = "formulario-label">
+                  <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">r</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">e</span><span style="transition-delay:250ms">o</span>
+              </label>
+        
             </div>
 
             <div class = "campo">
-              <label for="mensaje">Mensaje</label>
-              <textarea class = "input-text" id = "mensaje"></textarea>
+              <div class = "campo-mensaje">
+                <label for="mensaje" class = "mensaje">Mensaje: </label>
+                <textarea class = "input-text" id = "mensaje"></textarea>
+              </div>
+         
             </div>
           </div> <!--Contenedor-Campos-->
 

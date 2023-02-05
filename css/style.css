@@ -111,15 +111,30 @@ body {
   scroll-snap-stop: always;
 }
 .description-text {
+  text-align: center;
+  
   padding-top: 20px;
 }
+.title{
+  display: inline-block;
+}
 .description-title {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+  display: inline-block;
+ border-right: 5px solid;
+width: 100%;
+ white-space: nowrap;
+ overflow: hidden;
+ animation: typing 2s steps(28),
+            cursor .4s step-end infinite alternate;
   text-transform: uppercase;
   text-align: center;
   color: var(--color3);
+}
+@keyframes cursor {
+  50%{border-color: transparent;}
+}
+@keyframes typing {
+  from{width:0}
 }
 .description-paragraph {
   text-align: center;
@@ -159,6 +174,12 @@ body {
   padding-right: 24px;
   scroll-snap-align: center; 
   scroll-snap-stop: unset;
+  
+}
+@media (min-width: 768px){
+    .Skills{
+      max-width: 1200px;
+    }
 }
 
 .Skills h2 {
@@ -265,19 +286,52 @@ body {
 
 }
 .campo{
-  margin-bottom: 10px;
+  position: relative;
+  margin: 20px 0 40px;
+  width: 100%;
 }
-.campo label {
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 5px;
+.campo input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #0d2738 solid;
   display: block;
+  width: 100%;
+  padding: 15px 0;
+  padding-top: 20px;
+  font-size: 18px;
+  color: #0d2738;
+}
+.campo input:focus,
+.campo input:valid {
+  outline: 0;
+  border-bottom-color: var(--black);
+}
+
+
+
+ .formulario-label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
 }
 .campo textarea {
   height: 200px;
 
 }
 
+.campo label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #0d2738;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.campo input:focus+label span,
+.campo input:valid+label span {
+  color: #000000;
+  transform: translateY(-30px);
+}
 .input-text {
   width: 100%;
   border: none;
@@ -286,6 +340,15 @@ body {
   color: var(--black);
   font-size: 16px;
   border-radius: 0.5rem;
+}
+.mensaje{
+  position: relative;
+  top:0;
+  left: 0;
+  color: black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .boton {
@@ -314,6 +377,15 @@ body {
 .footer {
   color: var(--white);
   text-align: center;
+}
+.footer h3:hover{
+  animation-name: credits;
+  animation-duration: 2s;
+}
+@keyframes credits {
+  100%{
+    color: orange;
+  }
 }
 .footer p,
 .footer h3 {
