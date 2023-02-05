@@ -26,7 +26,9 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
+a{
+  text-decoration: none;
+}
 /* Header */
 .header {
   position: relative;
@@ -42,6 +44,7 @@ body {
 }
 .nav__title{
   padding-left: 50px;
+  font-size: 28px;
 }
 .nav__title-logo{
   
@@ -314,6 +317,9 @@ width: 100%;
   top: 15px;
   left: 0;
   pointer-events: none;
+}
+#ocultar{
+  opacity: 0;
 }
 .campo textarea {
   height: 200px;

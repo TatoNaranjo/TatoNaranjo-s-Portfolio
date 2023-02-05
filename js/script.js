@@ -24,8 +24,6 @@ mensaje.addEventListener("input",leerTexto);
 
 /* Leemos todo lo que el Usuario Vaya Digitando por Medio de Esta función */
 function leerTexto(e){
-    datos[e.target.id] = e.target.value;
-    console.log(datos);
 }
 
 formulario.addEventListener("submit", function(e){
@@ -68,3 +66,17 @@ function muestraMensaje(mensaje){
 
 
 /* FIN DE LA VALIDACION DE FORMULARIO */
+
+/* Implementación del Formulario */
+const form = document.querySelector("#form");
+const buttonMailTo = document.querySelector('#ocultar');
+form.addEventListener('submit',handleSubmit)
+
+function handleSubmit(event){
+event.preventDefault()
+
+const formulario = new FormData(this)
+console.log(formulario.get('telefono'))
+buttonMailTo.setAttribute('href',`mailto:naranjosa2004@gmail.com?subject=${formulario.get('name')} ${formulario.get('email')}&body=${formulario.get('mensaje')}`)
+buttonMailTo.click()
+}

@@ -22,7 +22,7 @@
     <header class="header">
       <nav class="nav">
         <div class = "nav__title">
-          <h2 class = "nav__title-logo">Tato<span class = "nav__logo--variant">Naranjo</span></h2>
+          <a href="./index.html" class = "nav__title-logo">Tato<span class = "nav__logo--variant">Naranjo</span></a>
         </div>
         <ul class="nav-link nav-link-menu">
           <li class="nav-items"><a href="" class="nav-links">Biografía</a></li>
@@ -94,9 +94,7 @@
             <p>
               Siendo el primer lenguaje con el que aprendí a programar, Java se coloca en mi lista de habilidades como el lenguaje de programación con el que más tiempo
               he trabajado, usandolo principalmente en competencias de programación para plataformas como CodeForces o HackerRank.
-              <br><br>
-              Un lenguaje que, aunque ha bajado en popularidad según las encuestas globales de los ultimos años, no deja de tener importancia dentro del ámbito empresarial.
-            </p>
+              </p>
           </div>
 
           <div class = "css-section">
@@ -136,13 +134,13 @@
       
       <!-- Seccion Formulario -->
 
-      <form class = "formulario" action="">
+      <form class = "formulario" action="" id = "form">
         <fieldset>
           <legend>Contactame</legend>
 
           <div class="contenedor-campos">
             <div class = "campo" class = "formulario-label">
-              <input type="value" required="" id="nombre">
+              <input type="value" required="" id="nombre" name = "name">
                 <label class = "formulario-label">
                     <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span>
                 </label>
@@ -150,7 +148,7 @@
             </div>
 
             <div class = "campo">
-              <input type="value" required="" id = "telefono">
+              <input type="value" required="" id = "telefono" name="telefono">
               <label class = "formulario-label">
                   <span style="transition-delay:0ms">T</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">l</span><span style="transition-delay:150ms">e</span><span style="transition-delay:200ms">f</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms">n</span><span style="transition-delay:350ms">o</span>
               </label>
@@ -159,7 +157,7 @@
 
             <div class = "campo">
             
-              <input type="value" required="" id ="email">
+              <input type="value" required="" id ="email" name = "email">
               <label class = "formulario-label">
                   <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">r</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">e</span><span style="transition-delay:250ms">o</span>
               </label>
@@ -169,7 +167,7 @@
             <div class = "campo">
               <div class = "campo-mensaje">
                 <label for="mensaje" class = "mensaje">Mensaje: </label>
-                <textarea class = "input-text" id = "mensaje"></textarea>
+                <textarea class = "input-text" id = "mensaje" name = "mensaje"></textarea>
               </div>
          
             </div>
@@ -182,6 +180,7 @@
  
 
       </form>
+      <a href="mailto:naranjosa2004@gmail.com" id ="ocultar">Mail</a>
       <!-- Fin Seccion Formulario -->
     </main>
     <!-- Fin Contenido Principal -->
