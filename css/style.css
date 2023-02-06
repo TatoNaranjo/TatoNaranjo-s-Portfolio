@@ -403,10 +403,13 @@ span.text{
 .campo input:focus,
 .campo input:valid {
   outline: 0;
+  
   border-bottom-color: var(--black);
 }
 
-
+.campo:active{
+  background-color: transparent;
+}
 
  .formulario-label {
   position: absolute;
