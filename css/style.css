@@ -448,6 +448,7 @@ span.text{
 }
 .mensaje{
   position: relative;
+  text-transform: uppercase;
   top:0;
   left: 0;
   color: black;
