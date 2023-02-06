@@ -13,6 +13,9 @@
 --color4: #8edc9f;
 --color5: #e2e2a8;
 }
+.hidden{
+  display: none;
+}
 html {
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
