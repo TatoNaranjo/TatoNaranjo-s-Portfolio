@@ -212,6 +212,9 @@ span.num{
   
  
 }
+summary{
+  text-align: center;
+}
 span.text{
   color:#000000;
   font-size: 1em;
