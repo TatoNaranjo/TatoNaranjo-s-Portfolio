@@ -1,3 +1,24 @@
+/* Animación Contando numeros */
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 5000;
+
+valueDisplays.forEach(valueDisplay =>{
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function(){
+        startValue +=1;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+            clearInterval(counter);
+        }
+    },duration)
+})
+
+
+/* FIN Animación Contando numeros */
+
+
 /* Validación del Formulario */
 
 const datos ={
@@ -82,3 +103,5 @@ const formulario = new FormData(this)
 buttonMailTo.setAttribute('href',`mailto:naranjosa2004@gmail.com?subject=${formulario.get('name')} ${formulario.get('email')}&body=${formulario.get('mensaje')}`)
 buttonMailTo.click()
 }
+
+/* FIN DE LA IMPLEMENTACIÓN DEL FORMULARIO */
